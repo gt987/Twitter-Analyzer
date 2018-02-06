@@ -1,0 +1,23 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<div class="page-header">
+  <h1>Something went wrong!</h1>
+</div>
+<p class="lead">The Twitter account you are trying to analize is either private or does not exist!</p>
+
+<p class="lead">Want to try a different account?</p>
+
+<form  action="/output" method="GET">
+  <div class="col-xs-6">
+    <input class="form-control input-lg" type="text" id="entity" name='entity' placeholder="e.g. @RealDonaldTrump">
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-default btn-lg">Analyze</button>
+  </div>
+  <p class="lead"></p>
+</form>
+
+{% endblock %}
