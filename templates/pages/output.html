@@ -9,8 +9,7 @@
 </div>
 <div class="page-header">
   <h2>This is what TATA found</h2>
-<p class="lead">{{worst_tweet}}</p>
-  <!--
+
   {% for tweet in worst_tweet %}
   <p class="lead"><strong>{{tweet.category}}:</strong> <em>{{tweet.text}}</em></p>
   {% endfor %}
@@ -20,13 +19,13 @@
   <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script>
   <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.5.min.js"></script>
   {{ the_script|safe }}
--->
 </div>
+
 <p class="lead">Want to try a different account?</p>
 
 <form  action="/output" method="GET">
   <div class="col-xs-6">
-    <input class="form-control input-lg" type="text" id="entity" name='entity' placeholder="e.g. @RealDonaldTrump">
+    <input class="form-control input-lg" type="text" id="entity" name='entity' placeholder="e.g. @{{placeholder_name}}">
   </div>
 
   <div>
